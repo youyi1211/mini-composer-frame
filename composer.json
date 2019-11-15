@@ -1,0 +1,31 @@
+{
+    "name": "youyi1211/demo",
+    "description": "learn composer project",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jack",
+            "email": "fy2009ayi@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "gregwar/captcha": "dev-master"
+    },
+    "autoload": {
+        "files": [
+            "core/function.php"
+        ],
+        "psr-4": {
+            "core\\": "core",
+            "web\\": "web"
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}

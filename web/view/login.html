@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录页面</title>
+</head>
+<body>
+<form action="?s=index/post" method="post">
+    用户名：<input type="text" name="username" placeholder="用户名"/><br/>
+    密码：<input type="text" name="password" placeholder="密码"/><br/>
+    验证码：<input type="text" name="captcha" placeholder="验证码"/><img alt src="?s=index/code" onclick="this.src='?s=index/code&v='+Math.random()"/><br/>
+    <button  >注册/登录</button>
+</form>
+<script>
+    function login() {
+        alert(99);
+    }
+</script>
+</body>
+</html>
